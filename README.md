@@ -1,6 +1,6 @@
 # 🏰 Wizard's Chess 3D — Gothic Cathedral
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Demo-brightgreen?style=for-the-badge&logo=github)](https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Demo-brightgreen?style=for-the-badge&logo=github)](https://isbandurahuman-r.github.io/3D-CHESS/)
 [![Three.js](https://img.shields.io/badge/Three.js-r128-black?style=for-the-badge&logo=three.js)](https://threejs.org/)
 [![Chess.js](https://img.shields.io/badge/Chess.js-0.10.3-blue?style=for-the-badge)](https://github.com/jhlywa/chess.js)
 [![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-v3-38bdf8?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
@@ -84,7 +84,7 @@ You can host this game on the web so anyone can play it in their browser for fre
    - Select `/ (root)` folder
    - Click **Save**.
 5. Wait 1–2 minutes, and GitHub will provide your live URL:
-   `https://<your-username>.github.io/<your-repo-name>/`
+   `https://isbandurahuman-r.github.io/3D-CHESS/`
 
 ---
 
@@ -102,21 +102,17 @@ git commit -m "Initial commit: Wizard's Chess 3D in Gothic Cathedral"
 ### 2. Create a Repository on GitHub
 1. Log in to [GitHub](https://github.com/).
 2. Click the **`+`** icon in the top right corner and select **New repository**.
-3. Name your repository (e.g. `wizards-chess-3d`).
+3. Name your repository `3D-CHESS`.
 4. Set visibility to **Public** (required for free GitHub Pages).
 5. **Do NOT** check "Add a README" or ".gitignore" (we already created them!).
 6. Click **Create repository**.
 
 ### 3. Link Remote and Push
-Copy the commands shown on GitHub under **"push an existing repository from the command line"**:
-
 ```bash
 git branch -M main
-git remote add origin https://github.com/<YOUR_USERNAME>/<YOUR_REPO_NAME>.git
+git remote add origin https://github.com/ISBANDURAHUMAN-R/3D-CHESS.git
 git push -u origin main
 ```
-
-*(Replace `<YOUR_USERNAME>` and `<YOUR_REPO_NAME>` with your GitHub account and repository name)*
 
 ---
 
