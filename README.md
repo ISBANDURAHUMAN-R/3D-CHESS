@@ -72,49 +72,7 @@ Running through a local web server ensures optimal WebGL performance and audio c
 
 ---
 
-## 🌐 Deploy to GitHub Pages (Play Online for Free)
 
-You can host this game on the web so anyone can play it in their browser for free using GitHub Pages:
-
-1. Push this repository to GitHub (see the [GitHub Push Guide](#-how-to-push-to-github) below).
-2. Go to your repository on **GitHub.com**.
-3. Click on **Settings** (gear icon) > **Pages** (in the left sidebar).
-4. Under **Build and deployment** > **Branch**:
-   - Select `main` (or `master`)
-   - Select `/ (root)` folder
-   - Click **Save**.
-5. Wait 1–2 minutes, and GitHub will provide your live URL:
-   `https://isbandurahuman-r.github.io/3D-CHESS/`
-
----
-
-## 🛠️ How to Push to GitHub
-
-### 1. Initialize Git and Commit
-Open your terminal in this folder and run:
-
-```bash
-git init
-git add .
-git commit -m "Initial commit: Wizard's Chess 3D in Gothic Cathedral"
-```
-
-### 2. Create a Repository on GitHub
-1. Log in to [GitHub](https://github.com/).
-2. Click the **`+`** icon in the top right corner and select **New repository**.
-3. Name your repository `3D-CHESS`.
-4. Set visibility to **Public** (required for free GitHub Pages).
-5. **Do NOT** check "Add a README" or ".gitignore" (we already created them!).
-6. Click **Create repository**.
-
-### 3. Link Remote and Push
-```bash
-git branch -M main
-git remote add origin https://github.com/ISBANDURAHUMAN-R/3D-CHESS.git
-git push -u origin main
-```
-
----
 
 ## 📂 Project Structure
 
@@ -130,7 +88,6 @@ git push -u origin main
 ## 🧰 Built With
 
 - [Three.js](https://threejs.org/) (r128) — 3D WebGL rendering, lighting, materials, and particle simulations
-- [Chess.js](https://github.com/jhlywa/chess.js) — FIDE chess rule validation and legal move calculation
 - [Tailwind CSS](https://tailwindcss.com/) — Clean, responsive glassmorphism UI styling
 - [Google Fonts](https://fonts.google.com/) — *Cinzel* (Gothic header typography) & *Inter* (UI readability)
 - [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) — Real-time synthesized sound effects
