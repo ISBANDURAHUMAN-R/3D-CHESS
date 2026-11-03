@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/banner.png" alt="3D-CHESS Banner" width="100%">
+</p>
+
 # 🏰 Wizard's Chess 3D — Gothic Cathedral
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Demo-brightgreen?style=for-the-badge&logo=github)](https://isbandurahuman-r.github.io/3D-CHESS/)
