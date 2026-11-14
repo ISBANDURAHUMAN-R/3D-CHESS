@@ -2,7 +2,7 @@
   <img src="assets/banner.png" alt="3D-CHESS Banner" width="100%">
 </p>
 
-# 🏰 Wizard's Chess 3D — Gothic Cathedral
+# ◈ Wizard's Chess 3D — Gothic Cathedral
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Demo-brightgreen?style=for-the-badge&logo=github)](https://isbandurahuman-r.github.io/3D-CHESS/)
 [![Three.js](https://img.shields.io/badge/Three.js-r128-black?style=for-the-badge&logo=three.js)](https://threejs.org/)
@@ -14,29 +14,29 @@
 
 ---
 
-## ✨ Features
+## ✦ Features
 
-- 💥 **Violent Shatter Combat**: Captures trigger cinematic strike animations where the captured piece shatters into high-speed physics shards and debris.
-- 🏰 **Atmospheric Gothic Cathedral**: Built with procedural Three.js architecture featuring soaring ribbed vaults, arched colonnades, torchlight lanterns, and stained-glass lighting.
-- 🧠 **Dual Game Modes**:
+- ▪ **Violent Shatter Combat**: Captures trigger cinematic strike animations where the captured piece shatters into high-speed physics shards and debris.
+- ▫ **Atmospheric Gothic Cathedral**: Built with procedural Three.js architecture featuring soaring ribbed vaults, arched colonnades, torchlight lanterns, and stained-glass lighting.
+- ▴ **Dual Game Modes**:
   - **Wizard AI**: Battle an arcane AI opponent with heuristic minimax evaluation.
   - **2-Player Local**: Pass-and-play against a friend on the same screen.
-- ♟️ **Full FIDE Chess Validation**: Powered by `chess.js` — handles legal moves, checks, checkmates, stalemates, castling, en passant, and pawn ascension (promotion modal).
-- 🔮 **Arcane Move Guidance**:
+- ▿ **Full FIDE Chess Validation**: Powered by `chess.js` — handles legal moves, checks, checkmates, stalemates, castling, en passant, and pawn ascension (promotion modal).
+- ⬡ **Arcane Move Guidance**:
   - Legal move tile highlights and hover targeting runes.
   - "Arcane Hint" button to suggest optimal strategic moves.
   - "Test Shatter" button to instantly preview destruction animations.
-- 🔊 **Procedural Web Audio Synthesizer**: 100% synthesized in real time via the Web Audio API — resonant stone slides, heavy warhammer impact thuds, crystalline shard clatters, and ethereal check chimes (no external audio files required!).
-- 💎 **Material Design 3 Glassmorphism HUD**:
+- ⬢ **Procedural Web Audio Synthesizer**: 100% synthesized in real time via the Web Audio API — resonant stone slides, heavy warhammer impact thuds, crystalline shard clatters, and ethereal check chimes (no external audio files required!).
+- ● **Material Design 3 Glassmorphism HUD**:
   - Live turn indicators with check warnings.
   - Captured pieces graveyard and dynamic material advantage counter.
   - Interactive "Chronicle of Moves" history log.
   - Camera preset switcher (White POV, Black POV, Overhead Tactical, and Free Orbit).
-- ⚡ **Zero-Build Architecture**: Everything is bundled into a single standalone static web page with CDN assets. No `npm install`, webpack, or build scripts needed!
+- · **Zero-Build Architecture**: Everything is bundled into a single standalone static web page with CDN assets. No `npm install`, webpack, or build scripts needed!
 
 ---
 
-## 🎮 Controls
+## § Controls
 
 | Action | Control |
 | :--- | :--- |
@@ -50,7 +50,7 @@
 
 ---
 
-## 🚀 Quick Start (Play Locally)
+## ▲ Quick Start (Play Locally)
 
 Since this game is built as a pure web app, you can run it immediately without any installation:
 
@@ -78,7 +78,7 @@ Running through a local web server ensures optimal WebGL performance and audio c
 
 
 
-## 📂 Project Structure
+## □ Project Structure
 
 ```text
 ├── index.html                           # Main entry point (compatible with GitHub Pages)
@@ -89,7 +89,7 @@ Running through a local web server ensures optimal WebGL performance and audio c
 
 ---
 
-## 🧰 Built With
+## ❖ Built With
 
 - [Three.js](https://threejs.org/) (r128) — 3D WebGL rendering, lighting, materials, and particle simulations
 - [Tailwind CSS](https://tailwindcss.com/) — Clean, responsive glassmorphism UI styling
@@ -98,6 +98,6 @@ Running through a local web server ensures optimal WebGL performance and audio c
 
 ---
 
-## 📜 License
+## ■ License
 
 This project is open-source and released under the [MIT License](LICENSE). Feel free to customize, enhance, and enjoy!
