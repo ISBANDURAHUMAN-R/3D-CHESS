@@ -4,100 +4,36 @@
 
 # ◈ Wizard's Chess 3D — Gothic Cathedral
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Demo-brightgreen?style=for-the-badge&logo=github)](https://isbandurahuman-r.github.io/3D-CHESS/)
-[![Three.js](https://img.shields.io/badge/Three.js-r128-black?style=for-the-badge&logo=three.js)](https://threejs.org/)
-[![Chess.js](https://img.shields.io/badge/Chess.js-0.10.3-blue?style=for-the-badge)](https://github.com/jhlywa/chess.js)
-[![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-v3-38bdf8?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+## ◆ About the Project
+Wizard's Chess 3D is a browser-based three-dimensional chess game set inside a vaulted gothic cathedral rendered with Three.js and WebGL. It pairs complete standard chess rules enforcement with cinematic piece-shattering capture animations and real-time procedural audio synthesis.
 
-> An immersive, Harry Potter–inspired **Wizard's Chess** game rendered in full 3D inside a vaulted Gothic Cathedral. Watch pieces violently strike down enemies and shatter them into exploding stone debris, accompanied by procedural acoustic audio!
+## ❖ Key Features
+- ▪ Full standard FIDE chess rules validation using `chess.js`, covering legal moves, check, checkmate, castling, en passant, and pawn promotion.
+- ▫ Piece-shattering combat animations where captured pieces disintegrate into dynamic 3D physics debris.
+- ▴ Single-player mode against a heuristic minimax chess AI alongside a local two-player pass-and-play mode.
+- ▿ Real-time procedural audio synthesizer generating movement slides, impact crashes, and check alerts via the Web Audio API.
+- ⬡ Orbital 3D camera controls with preset viewing perspectives (White, Black, Overhead, Free Orbit).
 
----
+## ⬢ Technologies Used
+- Three.js (r128)
+- WebGL & HTML5 Canvas
+- chess.js
+- Tailwind CSS
+- Web Audio API
 
-## ✦ Features
+## § Requirements
+- Modern web browser with WebGL 2.0 support (Chrome, Edge, Firefox, Safari)
 
-- ▪ **Violent Shatter Combat**: Captures trigger cinematic strike animations where the captured piece shatters into high-speed physics shards and debris.
-- ▫ **Atmospheric Gothic Cathedral**: Built with procedural Three.js architecture featuring soaring ribbed vaults, arched colonnades, torchlight lanterns, and stained-glass lighting.
-- ▴ **Dual Game Modes**:
-  - **Wizard AI**: Battle an arcane AI opponent with heuristic minimax evaluation.
-  - **2-Player Local**: Pass-and-play against a friend on the same screen.
-- ▿ **Full FIDE Chess Validation**: Powered by `chess.js` — handles legal moves, checks, checkmates, stalemates, castling, en passant, and pawn ascension (promotion modal).
-- ⬡ **Arcane Move Guidance**:
-  - Legal move tile highlights and hover targeting runes.
-  - "Arcane Hint" button to suggest optimal strategic moves.
-  - "Test Shatter" button to instantly preview destruction animations.
-- ⬢ **Procedural Web Audio Synthesizer**: 100% synthesized in real time via the Web Audio API — resonant stone slides, heavy warhammer impact thuds, crystalline shard clatters, and ethereal check chimes (no external audio files required!).
-- ● **Material Design 3 Glassmorphism HUD**:
-  - Live turn indicators with check warnings.
-  - Captured pieces graveyard and dynamic material advantage counter.
-  - Interactive "Chronicle of Moves" history log.
-  - Camera preset switcher (White POV, Black POV, Overhead Tactical, and Free Orbit).
-- · **Zero-Build Architecture**: Everything is bundled into a single standalone static web page with CDN assets. No `npm install`, webpack, or build scripts needed!
+## ▲ Installation & Execution
+```bash
+# Serve locally via Python
+python -m http.server 8000
 
----
-
-## § Controls
-
-| Action | Control |
-| :--- | :--- |
-| **Select Piece / Move** | **Left Click** on piece or target square |
-| **Orbit Camera** | **Click & Drag** anywhere on the background |
-| **Zoom In / Out** | **Mouse Scroll Wheel** or pinch gesture |
-| **Cycle Camera Angles** | Click the **Cam Preset** button on the top bar |
-| **Arcane Hint** | Click **Hint** to illuminate the best move |
-| **Undo Move** | Click **Undo** to take back your last move |
-| **Toggle Audio** | Click **SFX On / Off** |
-
----
-
-## ▲ Quick Start (Play Locally)
-
-Since this game is built as a pure web app, you can run it immediately without any installation:
-
-### Option 1: Direct File Open
-Simply double-click [`index.html`](index.html) or `wizard_s_chess_gothic_cathedral_3d.html` to open it in Chrome, Edge, Firefox, or Safari.
-
-### Option 2: Local HTTP Server (Recommended)
-Running through a local web server ensures optimal WebGL performance and audio context initialization:
-
-- **Using Python 3**:
-  ```bash
-  python -m http.server 8000
-  ```
-  Then visit `http://localhost:8000` in your browser.
-
-- **Using Node.js (`npx serve`)**:
-  ```bash
-  npx serve .
-  ```
-
-- **Using VS Code Live Server**:
-  Right-click `index.html` and choose **"Open with Live Server"**.
-
----
-
-
-
-## □ Project Structure
-
-```text
-├── index.html                           # Main entry point (compatible with GitHub Pages)
-├── wizard_s_chess_gothic_cathedral_3d.html  # Original standalone single-file distribution
-├── .gitignore                           # Git ignore rules for system and editor cache files
-└── README.md                            # Documentation and deployment guide
+# Or serve via Node.js
+npx serve .
 ```
+Open `http://localhost:8000` in your web browser.
 
----
-
-## ❖ Built With
-
-- [Three.js](https://threejs.org/) (r128) — 3D WebGL rendering, lighting, materials, and particle simulations
-- [Tailwind CSS](https://tailwindcss.com/) — Clean, responsive glassmorphism UI styling
-- [Google Fonts](https://fonts.google.com/) — *Cinzel* (Gothic header typography) & *Inter* (UI readability)
-- [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) — Real-time synthesized sound effects
-
----
-
-## ■ License
-
-This project is open-source and released under the [MIT License](LICENSE). Feel free to customize, enhance, and enjoy!
+## ※ Developer
+Developer: ISBANDU RAHUMAN R  
+GitHub: https://github.com/ISBANDURAHUMAN-R
