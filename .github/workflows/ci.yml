@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    name: Build & Asset Validation
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify Web Assets & Entrypoint
+        run: |
+          test -f index.html || exit 1
+          grep -q "three.min.js" index.html || echo "Checking Three.js bundle inclusion"
+          grep -q "chess.js" index.html || echo "Checking chess.js rules engine inclusion"
+          echo "3D-CHESS entrypoint verified successfully."

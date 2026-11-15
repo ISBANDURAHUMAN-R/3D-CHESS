@@ -4,6 +4,8 @@
 
 # ◈ Wizard's Chess 3D — Gothic Cathedral
 
+[![CI](https://github.com/ISBANDURAHUMAN-R/3D-CHESS/actions/workflows/ci.yml/badge.svg)](https://github.com/ISBANDURAHUMAN-R/3D-CHESS/actions/workflows/ci.yml)
+
 ## ◆ About the Project
 Wizard's Chess 3D is a browser-based three-dimensional chess game set inside a vaulted gothic cathedral rendered with Three.js and WebGL. It pairs complete standard chess rules enforcement with cinematic piece-shattering capture animations and real-time procedural audio synthesis.
 
@@ -13,6 +15,42 @@ Wizard's Chess 3D is a browser-based three-dimensional chess game set inside a v
 - Single-player mode against a heuristic minimax chess AI alongside a local two-player pass-and-play mode.
 - Real-time procedural audio synthesizer generating movement slides, impact crashes, and check alerts via the Web Audio API.
 - Orbital 3D camera controls with preset viewing perspectives (White, Black, Overhead, Free Orbit).
+
+## ◆ System Architecture
+```mermaid
+graph TD
+    subgraph UIControls ["User Interaction Layer"]
+        MouseRay[Raycaster 3D Picking] --> Selection[Piece Selection & Move Target]
+        CamControl[Orbit Controls & Presets] --> Camera[Perspective Camera]
+    end
+
+    subgraph ChessCore ["Rules & AI Validation"]
+        Selection --> RuleEngine[chess.js Rules Engine]
+        MoveValidator{Legal Move?}
+        RuleEngine --> MoveValidator
+        MoveValidator -- No --> Reject[Shake Animation & Error Tone]
+        MoveValidator -- Yes --> MoveExecute[Execute State Mutation]
+        TurnCheck{Turn Complete?}
+        MoveExecute --> TurnCheck
+        TurnCheck -- AI Mode --> MinimaxAI[Heuristic Minimax AI<br/>Alpha-Beta Pruning]
+        MinimaxAI --> MoveExecute
+    end
+
+    subgraph GraphicsEngine ["Three.js 3D Render Loop"]
+        MoveExecute --> PieceTween[GSAP / Linear Move Interpolation]
+        CaptureCheck{Piece Captured?}
+        MoveExecute --> CaptureCheck
+        CaptureCheck -- Yes --> FractureSim[Debris Physics & Shatter FX]
+        PieceTween --> SceneGraph[Gothic Cathedral Scene Graph]
+        FractureSim --> SceneGraph
+        SceneGraph --> WebGL[WebGLRenderer Pass]
+    end
+
+    subgraph AudioEngine ["Procedural Audio Synth"]
+        MoveExecute --> SlideAudio[Wood/Stone Slide Oscillator]
+        FractureSim --> ImpactAudio[Noise Buffer & Shatter Transient]
+    end
+```
 
 ## ⬢ Technologies Used
 - Three.js (r128)
